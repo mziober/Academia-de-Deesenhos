@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#61C7BD">
+  <meta name="description" content="Explore o desenho com projetos guiados em PDF e material digital imprimível. Pratique no seu próprio ritmo.">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Academia de Desenho | Projetos guiados em PDF</title>
+  <link rel="icon" href="assets/simbolo.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/cormorant-latin.woff2?v=2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/raleway-latin.woff2?v=2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/produto-pdf-pt.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="oferta.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#oferta">Pular para a oferta</a>
+  <div class="faixa" aria-label="Apresentação"><div class="faixa-track" id="faixa"></div></div>
+  <header class="cabecalho"><div class="marca" id="marcaPrincipal"></div></header>
+  <main class="pagina">
+    <section class="galeria bloco" aria-label="Conheça o material digital">
+      <div id="galeriaPrincipal" class="galeria-principal" tabindex="0" aria-roledescription="carrossel" aria-label="Imagens do material. Use as miniaturas ou deslize para navegar.">
+        <img id="imagemPrincipal" width="1254" height="1254" fetchpriority="high" decoding="async" alt="">
+        <span class="contador" id="contadorGaleria" aria-live="polite"></span>
+      </div>
+      <div id="miniaturas" class="miniaturas" aria-label="Escolha uma imagem"></div>
+      <p id="legendaGaleria" class="legenda-galeria"></p>
+      <p class="nota-ilustrativa" data-ilustrativa>Prévia ilustrativa · material digital, sem envio físico.</p>
+    </section>
+    <div class="faixa-artistas bloco" id="confianca"></div>
+    <section class="oferta bloco" id="oferta" aria-labelledby="tituloOferta">
+      <h1 id="tituloOferta"></h1>
+      <p class="subtitulo" id="subtituloOferta"></p>
+      <ul class="beneficios-iniciais" id="beneficiosIniciais"></ul>
+      <figure id="depoimentoDestaque" class="depoimento-destaque" hidden></figure>
+      <fieldset class="pacotes"><legend>Material digital em PDF</legend><div id="pacotes"></div></fieldset>
+      <div class="compra"><a id="botaoCompra" class="botao-compra" aria-disabled="true"><span id="textoCompra"></span><span id="condicoesCompra"></span></a><p id="avisoCompra" class="aviso-compra" role="status"></p></div>
+      <div class="pagamento" id="pagamento"><div id="segurancaPagamento" class="seguranca-pagamento"></div><div class="metodos" id="metodosPagamento" hidden></div><p class="mini-garantia" id="miniGarantia" hidden></p></div>
+    </section>
+    <figure id="demonstracao" class="demonstracao bloco" aria-label="Demonstração do material"><div class="midia-demonstracao" id="midiaDemonstracao"></div><figcaption data-ilustrativa>Prévia de navegação pelo material de referência.</figcaption></figure>
+    <section class="projetos bloco" aria-labelledby="tituloProjetos"><h2 id="tituloProjetos"></h2><p id="textoProjetos"></p><figure><img id="imagemProjetos" loading="lazy" decoding="async" width="1200" height="1600" alt=""><figcaption data-ilustrativa>Estudos ilustrativos. O conteúdo final será apresentado na abertura das inscrições.</figcaption></figure></section>
+    <section class="beneficios bloco" aria-labelledby="tituloBeneficios"><h2 id="tituloBeneficios"></h2><h2 class="subtitulo-beneficios" id="subtituloBeneficios"></h2><ul id="beneficiosGuia"></ul></section>
+    <section class="depoimentos bloco" id="secaoDepoimentos" aria-labelledby="tituloDepoimentos" hidden><h2 id="tituloDepoimentos"></h2><p class="dica-deslize" id="dicaDepoimentos"></p><p class="origem-depoimentos" id="origemDepoimentos" hidden></p><div class="carrossel-depoimentos" id="carrosselDepoimentos" aria-label="Depoimentos traduzidos da página de referência"></div><div class="controle-carrossel"><button class="nav-depoimentos" id="anteriorDepoimento" aria-label="Depoimento anterior">←</button><div id="indicadoresDepoimentos" class="indicadores"></div><button class="nav-depoimentos" id="proximoDepoimento" aria-label="Próximo depoimento">→</button></div></section>
+    <section class="faq bloco" aria-labelledby="tituloFaq"><h2 id="tituloFaq">Suas dúvidas,<br><span>respondidas com clareza.</span></h2><div id="faq"></div></section>
+    <section class="garantia bloco" aria-labelledby="tituloGarantia"><div class="selo-garantia" id="seloGarantia"></div><div><h2 id="tituloGarantia">Garantia e tranquilidade</h2><p id="textoGarantia"></p><a id="canalGarantia" hidden></a></div></section>
+  </main>
+  <footer class="rodape"><div class="marca marca-pequena" id="marcaRodape"></div><p class="sobre-marca" id="sobreMarca"></p><div class="contatos" id="contatos"></div><nav class="links-legais" id="linksLegais" aria-label="Informações legais"></nav><p class="copyright" id="copyright"></p><p class="dados-empresa" id="dadosEmpresa" hidden></p></footer>
+  <dialog id="modalLegal" class="modal-legal"><button class="fechar-modal" aria-label="Fechar" id="fecharModal">×</button><h2 id="tituloModal"></h2><p id="textoModal"></p><button id="confirmarModal" class="confirmar-modal">Entendi</button></dialog>
+  <noscript><p class="noscript">Ative o JavaScript para navegar pelas imagens, consultar a oferta e ler as perguntas frequentes.</p></noscript>
+</body>
+</html>
